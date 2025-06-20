@@ -6,7 +6,7 @@ class TokenGenerator {
     return jwt.sign(
       { id: payload.id, roles: payload.roles },
       config.jwtSecret,
-      { expiresIn: '1h' }
+      { expiresIn: '10m' }
     );
   }
 }
